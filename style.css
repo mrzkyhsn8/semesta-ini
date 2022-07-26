@@ -1,0 +1,257 @@
+body {
+    font-family: "Trirong", serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #2C3639;
+    padding-inline-start: 0px !important;
+    /* background-image: url(img/bg.jpg);
+    background-size: cover; */
+    user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none
+}
+
+/* overwrite user agent stylesheet on browser */
+* {
+    padding-inline-start: 0px;
+}
+/* overwrite */
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-height: 50px;
+    background-color: #1B2430;
+    /* background-image: url(img/bg.jpg); */
+    /* background-size: cover;
+    background-repeat: no-repeat; */
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+li, a, button {
+    text-decoration: none;
+    color: #d2d2d2;
+    font-size: 18px;
+}
+
+header li {
+    display: inline-block;
+
+    list-style: none;   
+    margin: 0 10px;
+    padding: 0 15px;
+}
+
+header li a {
+    transition: all 0.3s;
+}
+
+header li a:hover {
+    color: #1e81b0;
+}
+
+header button {
+    background-color: rgba(162, 123, 92, 0.8);
+    padding: 5px 15px;
+    margin-left: 15px;
+    border: none;
+    border-radius: 20px;
+}
+
+header button:hover{
+    cursor: pointer;
+    background-color: rgba(162, 123, 92, 1);
+}
+
+/* .container {
+    margin: 20px;
+    padding: 10px;
+} */
+
+#home {
+    background-image: url(img/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height: 500px;
+    padding: 150px 60px 0 60px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.title h1{
+    color: #d2d2d2;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.title span{
+    font-size: 15px;
+    color: #d2d2d2;
+}
+
+#contents{
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: #2C3639;
+    text-align: center;
+}
+
+article{
+    /* /* float: left; */
+    width: 25%; 
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 30px;
+}
+
+.heading {
+    color: #d2d2d2;
+    letter-spacing: 3px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.content-image img{
+    position: relative;
+    width: 90%;
+    border-radius: 20px;
+}
+
+.content-image img:hover{
+    box-shadow: 3px 3px 30px white;
+    transition: 0.3s all;
+}
+
+.foto-about img:hover{
+    box-shadow: 3px 3px 18px white;
+    transition: 0.3s all;
+}
+
+#about {
+    text-align: center;
+    color: #DCD7C9;
+    background-color: #1B2430;
+    padding-bottom: 120px;
+}
+
+.about-article {
+    display: flex;
+    justify-content: space-evenly;
+
+    width: 50%;
+    /* border: 2px solid white; */
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+}
+
+.foto-about img {
+    width: 180px;
+    margin: 10px 20px;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #1e81b0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+footer {
+    height: 50px;
+    background-color: #1B2430;
+    color: #DCD7C9;
+    text-align: center;
+    border-top: 1px solid #DCD7C9;
+}
+
+@media screen and (max-width: 530px) {
+
+    #home {
+        background-position: center;
+        padding-top: 80px;
+        padding-bottom: 30px;
+        height: auto;
+    }    
+    
+    header li { 
+        margin: 0 auto;
+    }
+    
+    li, a, button {
+        font-size: 15px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .title span{
+        font-size: 12px;
+    }
+
+    .heading h1 {
+        font-size: 15px;
+        padding: 10px 0;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    article{
+        /* /* float: left; */
+        width: 40%; 
+        padding-bottom: 10px;
+    }
+
+    .about-article {
+        flex-direction: column;
+        justify-content: center;
+
+        /* border: 1px solid white; */
+        width: 80%;
+        border-radius: 20px;
+        font-size: 13px;
+        padding: 5px;
+    }
+
+    .foto-about {
+        margin: 0 auto;
+    }
+
+    .foto-about img {
+        width: 110px;
+        border-radius: 20px;
+    }
+
+    aside{
+        text-align: center;
+    }
+
+    aside p {
+        text-align: left;
+    }
+
+    footer{
+        font-size: 12px;
+    }
+}
